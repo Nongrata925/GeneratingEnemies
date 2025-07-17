@@ -43,7 +43,7 @@ public class Spawner : MonoBehaviour
         
         enemy.transform.position = spawnPoint.transform.position;
         enemy.ReleaseZoneReached += ReleaseEnemy;
-        enemy.Initialize(spawnPoint.SetMovementDirection());
+        enemy.Initialize(spawnPoint.MovementDirection);
         enemy.gameObject.SetActive(true);
     }
 

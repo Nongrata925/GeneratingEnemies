@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody.MovePosition(_rigidbody.position + _movementDirection * Time.deltaTime * _movementSpeed);
+        _rigidbody.MovePosition(_rigidbody.position + _movementDirection * Time.fixedDeltaTime * _movementSpeed);
     }
 
     private void OnTriggerEnter(Collider other)
